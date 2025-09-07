@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Dado } from './dado';
+import { Selectornumerico } from './selectornumerico';
 
-describe('Dado', () => {
-  let component: Dado;
-  let fixture: ComponentFixture<Dado>;
+describe('Selectornumerico', () => {
+  let component: Selectornumerico;
+  let fixture: ComponentFixture<Selectornumerico>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Dado]
+      imports: [Selectornumerico]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Dado);
+    fixture = TestBed.createComponent(Selectornumerico);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
