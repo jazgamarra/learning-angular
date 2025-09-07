@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
@@ -8,13 +7,11 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  contador = 1;
-
-  incrementar() {
-    this.contador++;
+  nombre = ''
+  fijarNombre1() {
+    this.nombre = 'Juan';
   }
-
-  decrementar() {
-    this.contador--;
+  fijarNombre2() {
+    this.nombre = 'Ana';
   }
 }
