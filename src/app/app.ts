@@ -8,25 +8,13 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  nombre = 'Rodriguez Pablo';
+  contador = 1;
 
-  edad = 40;
+  incrementar() {
+    this.contador++;
+  }
 
-  articulos = [{
-    codigo: 1,
- descripcion: 'naranjas',
-    precio: 540
-  }, {
-    codigo: 2,
-    descripcion: 'manzanas',
-    precio: 900
-  }, {
-    codigo: 3,
-    descripcion: 'peras',
-    precio: 490
-  }];
-
-  generarNumero() {
-    return Math.floor(Math.random() * 3) + 1;
+  decrementar() {
+    this.contador--;
   }
 }
