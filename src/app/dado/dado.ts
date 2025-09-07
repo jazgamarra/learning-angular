@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dado',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './dado.css'
 })
 export class Dado {
-  valor: number = Math.floor(Math.random() * 6) + 1;
+  @Input() valor: string = "";
 }
