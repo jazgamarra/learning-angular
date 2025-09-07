@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Selectornumerico } from './selectornumerico/selectornumerico';
 
@@ -9,4 +9,15 @@ import { Selectornumerico } from './selectornumerico/selectornumerico';
   styleUrl: './app.css'
 })
 export class App {
+  @ViewChild('selector1') selector1!: Selectornumerico;
+  @ViewChild('selector2') selector2!: Selectornumerico;
+
+  fijarSelector1(valor:number) {
+    this.selector1.fijar(valor);
+  }
+
+  fijarSelector2(valor:number) {
+    this.selector2.fijar(valor);
+  }
 }
+  
