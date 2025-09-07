@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Dado } from './dado/dado';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Dado],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  nombre = ''
-  fijarNombre1() {
-    this.nombre = 'Juan';
-  }
-  fijarNombre2() {
-    this.nombre = 'Ana';
-  }
+  title = 'project01';
 }
